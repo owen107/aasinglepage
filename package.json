@@ -1,0 +1,22 @@
+{
+  "name": "AArSinglePageResponsive",
+  "version": "0.0.1",
+  "description": "A single page website that berifly introduce Ann Arbor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owen107/aasinglepage.git"
+  },
+  "author": "Owen Xu",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-util": "^2.2.20",
+    "gulp-concat": "^2.3.4",
+    "gulp-browserify": "^0.5.0",
+    "jquery": "^2.1.1",
+    "gulp-compass": "^1.2.0",
+    "gulp-connect": "^2.0.6",
+    "gulp-if": "^1.2.4",
+    "gulp-uglify": "^0.3.1",
+    "gulp-minify-html": "^0.1.4"
+  }
+}
