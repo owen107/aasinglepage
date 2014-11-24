@@ -1,0 +1,49 @@
+#welcome {
+	@include background-image(linear-gradient(top, $yellow, $red));
+
+	article {
+	   text-align: center;
+	   @include container(70%);
+	   @include breakpoint($small) {
+	      @include container(33em);
+	      padding: 30px 0;
+	   } //breakpoint
+	} // article
+
+	h1 {
+	  font-weight: $bold;
+	  line-height: 100%;
+	  color: darken($red, 20);
+	  padding: 10px 0;
+	} // h1
+
+	p {
+	  font-weight: 500;
+	} // p
+
+	.gallery {
+	  @include clearfix;
+	  img {
+	    @include border-radius(20%);
+	    display: none;
+
+	    @include breakpoint($small) {
+		   @include gallery(1 of 4);
+		   display: inline; 
+
+		   &.hidesm {
+		     display: none;
+		   } // hidesm
+		} // breakpoint
+
+		@include breakpoint($medium) {
+		    @include gallery(1 of 5);
+		    display: inline;
+
+		    &.hidesm {
+		     display: inline;
+		   } // hidesm 
+		} // breakpoint
+	  } // img
+	} // gallery
+} // welcome

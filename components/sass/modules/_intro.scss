@@ -1,17 +1,21 @@
 header {
 	.fullheight {
-	   @include backImage('../images/skyline/aaskyline4.jpg');
+	   @include backImage('../images/skyline/aaskyline.jpg');
 
 	   .hgroup {
 	      padding: 120px 0;
 
 	      h1 {
 	         color: $light;
-	         font-size: 3.8em;
+	         font-size: 5em;
 	         font-weight: $heavy;
 	         line-height: 0.8em;
 	         @include text-shadow($dark 0 0 20px);
 	         text-align: center;
+
+	         @include breakpoint(max-width $small) {
+	            font-size: 3em;
+	         } // breakpint
 	      } // h1 
 
 	      h2 {

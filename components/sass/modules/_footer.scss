@@ -1,0 +1,41 @@
+footer {
+	@include container(100%);
+	background: lighten($dark, 20);
+	padding: 30px 0;
+
+	#socialmedia {
+	  text-align: center;
+
+	  ul {
+	    list-style: none;
+
+	    li {
+	      display: inline-block;
+	      padding: 0 5px;
+
+	      a {
+	        color: $light;
+	        font-size: 2.5em;
+
+	        &:hover {
+	          .fa-facebook-square {
+	             color: $blue;
+	           } // facebook
+
+	           .fa-twitter-square {
+	             color: $lightblue;
+	           } // twitter
+
+	           .fa-google-plus-square {
+	             color: $red;
+	           } // googleplus
+
+	           .fa-pinterest-square {
+	             color: darken($red, 20);
+	           } // pinterest
+	        } // hover
+	      } // a
+	    } // li
+	  } // ul
+	} // socialmedia
+} // footer
