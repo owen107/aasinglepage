@@ -4,6 +4,7 @@
 //Compass imports
 @import "compass";
 @import "compass/reset";
+@import "compass/css3";
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
 @import 'compass/css3/filter';
@@ -21,7 +22,12 @@
 @import "layout";
 
 // Import Modules
-
+@import "modules/welcome";
 @import "modules/intro";
+@import "modules/umich";
+@import "modules/landmark";
+@import "modules/dining";
+@import "modules/events";
+@import "modules/scenery";
 @import "modules/nav";
 @import "modules/footer";

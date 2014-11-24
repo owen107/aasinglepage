@@ -1,7 +1,9 @@
 // _variables.scss
-// =================
+// ============================
 @import "http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800";
-@include border-box-sizing; //uses border box sizing like the old IE...sweet.
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,900";
+
+@include border-box-sizing; //uses border box sizing like the old IE
 
 //Susy Global Settings
 $susy: (
@@ -11,28 +13,30 @@ $susy: (
   gutter-position: inside
 );
 
+// Color Palette
 
-$blue   : #063642;
-$green  : #45B29D;
-$yellow : #EFC94C;
-$orange : #E27A3F;
-$red    : #DF4848;
-$pink   : #CD0069;
-$purple : #6C71C4;
-$dark   : #000000;
-$light  : #FFFFFF;
+$blue      : #336699;
+$maize     : #E89D00;
+$yellow    : #FFBC2E;
+$lightblue : #33A3DC;
+$red       : #DC4332;
+$grey      : #E0E0E0;
+$orange    : #F2C968;
+$dark      : #000000;
+$light     : #FFFFFF;
 
 $backgroundColor : $light;
 $typeDefault     : $dark;
 $navBackground   : $blue;
-$navForeground   : $light;
+$navForeground   : $red;
 $navHover        : $yellow;
-$navBrandBg      : $red;
+$navBrandBg      : $light;
 $headersubbg     : $dark;
 
 //Font variables
 
-$fontfamily : 'Exo 2', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
+$headfamily : 'Exo 2', 'Helvetica Neue', Helvetica, Arial,  sans-serif;
+$mainfamily : 'Source Sans Pro', sans-serif;
 
 $thin : 200;
 $normal : 400;
@@ -40,9 +44,9 @@ $bold : 600;
 $heavy : 800;
 
 
-$headFont : $thin 1.5em/1.5em $fontfamily;
-$mainFont : $thin 1em/1.5em $fontfamily;
-$headColor: lighten($blue,20);
+$headFont : $thin 1.5em/1.5em $headfamily;
+$mainFont : $thin 1em/1.5em $mainfamily;
+$headColor: $red;
 
 //Breakpoint variables
 $narrow: 400px;

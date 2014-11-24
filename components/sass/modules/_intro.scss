@@ -1,45 +1,39 @@
 header {
-  .fullheight {
-    @include backImage('../images/hotel/splash_hotelphoto.jpg');
-    @include display-flex();
-    @include align-items(center);
-    @include justify-content(center);
+	.fullheight {
+	   @include backImage('../images/skyline/aaskyline4.jpg');
 
-    .hgroup {
-      @include container(95%);
-      margin: 100px 0;
+	   .hgroup {
+	      padding: 120px 0;
 
-      h1 {
-        color: white;
-        font-size: 5em;
-        font-weight: $heavy;
-        line-height: .8em;
-        @include text-shadow($dark 0 0 20px);
-        text-transform: capitalize;
-        text-align: center;
+	      h1 {
+	         color: $light;
+	         font-size: 3.8em;
+	         font-weight: $heavy;
+	         line-height: 0.8em;
+	         @include text-shadow($dark 0 0 20px);
+	         text-align: center;
+	      } // h1 
 
-      } //h1
+	      h2 {
+	        color: $light;
+	        display: block;
+	        width: 60%;
+	        max-width: 160px;
+	        border: 1px solid $light;
+	        padding: 7px;
+	        margin: 15px auto 0;
+	        text-align: center;
+	        font-size: 1.3em;
+	        background: rgba($headersubbg, 0.5);
+	      } // h2
 
-      h2 {
-        @include container(50%);
-        color: $light;
-        z-index: 10;
-        margin-top: 15px;
-        font-size: 1.3em;
-        padding: 10px;
-        border: 1px solid $light;
-        text-transform: capitalize;
-        text-align: center;
-        background: rgba($headersubbg, .5);
-      } //h2
-
-      p {
-        text-align: center;
-        img {
-          padding-top: 50px;
-          max-width: 50px;
-        } //img
-      } //p
-    } //hgroup
-  } //fullheight
-} //header
+	      p {
+	        text-align: center;
+	        img {
+	           padding-top: 50px;
+	           max-width: 50px;
+	        } // img
+	      } // p
+	   } // hgroup
+	} // fullheight
+} // header
