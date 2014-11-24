@@ -206,6 +206,17 @@ body {
   border-radius: 20%;
   display: none;
 }
+/* line 30, ../../../components/sass/modules/_welcome.scss */
+#welcome .gallery img:hover {
+  -moz-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  -webkit-transition-duration: 5s;
+  transition-duration: 5s;
+  -moz-transition-timing-function: easing-in-out;
+  -o-transition-timing-function: easing-in-out;
+  -webkit-transition-timing-function: easing-in-out;
+  transition-timing-function: easing-in-out;
+}
 @media (min-width: 650px) {
   /* line 26, ../../../components/sass/modules/_welcome.scss */
   #welcome .gallery img {
@@ -242,7 +253,7 @@ body {
     margin-right: -100%;
     clear: none;
   }
-  /* line 34, ../../../components/sass/modules/_welcome.scss */
+  /* line 39, ../../../components/sass/modules/_welcome.scss */
   #welcome .gallery img.hidesm {
     display: none;
   }
@@ -289,7 +300,7 @@ body {
     margin-right: -100%;
     clear: none;
   }
-  /* line 43, ../../../components/sass/modules/_welcome.scss */
+  /* line 48, ../../../components/sass/modules/_welcome.scss */
   #welcome .gallery img.hidesm {
     display: inline;
   }

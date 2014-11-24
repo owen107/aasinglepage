@@ -27,6 +27,11 @@
 	    @include border-radius(20%);
 	    display: none;
 
+	    &:hover {
+	       @include transition-duration(5s);
+	       @include transition-timing-function(easing-in-out);
+	    } // hover
+
 	    @include breakpoint($small) {
 		   @include gallery(1 of 4);
 		   display: inline; 
