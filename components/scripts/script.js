@@ -14,22 +14,33 @@ $(document).ready(function(){
     // set up the image slider in umich section
     // configuration
     var width = 650;
-    var animationSpeed = 1000;
-    var pause = 4000;
+    var animationSpeed = 1500;
+    var pause = 3500;
     var currentSlide = 1;
 
     // cache DOM
     var $slider = $('#slider');
     var $sliderContainer = $slider.find('.slides');
     var $slide = $sliderContainer.find('.slide');
+
+    var interval;
     
-	setInterval(function() {
-		$sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed, function() {
-			currentSlide++;
-			if (currentSlide === $slide.length) {
-				currentSlide = 1;
-				$sliderContainer.css('margin-left', 0);
-			}
-		});
-	}, pause);
+	function startSlider() {
+		interval = setInterval(function() {
+			$sliderContainer.animate({'margin-left': '-=' + width + 'px'}, animationSpeed, function() {
+				currentSlide++;
+				if (currentSlide === $slide.length) {
+					currentSlide = 1;
+					$sliderContainer.css('margin-left', 0);
+				}
+			});
+		}, pause);
+	}
+
+	function stopSlider() {
+		clearInterval(interval);
+	}
+
+    $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
+    startSlider();
 });

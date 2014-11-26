@@ -7,27 +7,76 @@
 	} // headings
 
 	.heading {
-	   @include container(64em);
+	   @include container(64em);  
 	   img {
-	      max-width: 300px;
-          max-height: 300px;
+	      @include span(2 of 3);
+	      padding-left: 0;
+          
+          @include breakpoint(max-width $large) {
+	          @include span(3 of 3);
+	      } // breakpoint
 	   } // img
 	} // heading
+
+	section {
+	   h2 {
+	     font-size: 1.3em;
+	     line-height: 110%;
+	     padding: 10px 0;
+	   } // h2
+
+	   p {
+	     font-size: 1em;
+	     line-height: 130%;
+	   } // p
+
+	   ul {
+	     li {
+	       list-style: square;
+	       margin-left: 10%;
+	       line-height: 115%;
+	       margin-bottom: 5px;
+	       font-size: 0.9em;
+	     } // li
+	   } // ul
+	} // section
 
 	#usefulinfo {
 	   @include container(64em);
 
 	   #historyinfo {
-	      @include span(4);
+	      @include span(1 of 3);
+	      p {
+	         line-height: 150%;
+	         @include breakpoint(max-width $potrait) {
+                 #hide_info {
+                    display: none;
+                 } // hide_info
+	         } // breakpoint
+	      } // p
+
+	      @include breakpoint(max-width $large) {
+	         @include span(1 of 1);
+	      } // breakpoint
 	   } // historyinfo
 
 	   .galleryinfo {
-	      @include span(8);
-	      margin-left: 0;
+	      @include span(2 of 3);
+	      margin-top: 20px;
+	      @include breakpoint(max-width $large) {
+	         @include span(1 of 1);
+
+	         #slider {
+	            margin: 0 auto;
+	         } // slider
+	      } // breakpoint
+
+	      @include breakpoint(max-width $potrait) {
+	         margin-top: 0;
+	      } // breakpoint
 
 	      .slides {
 	         img {
-	            padding: 5px;
 	            width: 100%;
 	         } // img 
 	      } // slides
@@ -35,14 +84,18 @@
 
 	    #slider {
 	         overflow: hidden;
-	         width: 650px;
-	         height: 435px;
-	         border: 1px solid lighten($maize, 15);
+	         max-width: 650px;
+	         max-height: 435px;
+	         border: 5px solid lighten($maize, 15);
+
+	         @include breakpoint(max-width $potrait) {
+		        display: none;
+		     } // breakpoint
 
 	         .slides {
 	            display: block;
 	            width: 6000px;
-	            height: 435px;
+	            max-height: 435px;
 	            margin: 0;
 	            padding: 0;
 	         } // slides
@@ -50,9 +103,50 @@
 	         .slide {
 	           float: left;
 	           list-style: none;
-	           width: 650px;
-	           height: 435px;
+	           max-width: 650px;
+	           max-height: 435px;
 	         } // slide
 	    } // slider
+
+	    .basicinfo {
+	       @include container;
+	       margin-top: 20px;
+           
+           @include breakpoint(max-width $potrait) {
+              margin-top: 0;
+           } // breakpoint
+	       
+	       .checklist {
+	          @include span(1 of 2);
+	          padding: 0 10px;
+
+	          @include breakpoint(max-width $small) {
+	             @include span(12);
+	          } // breakpoint
+	       } // checklist
+	    } // basicinfo
 	} // usefulinfo
+
+	#ranking {
+	   background-color: rgba(darken($lightblue, 30), 0.5);
+	   margin-top: 20px;
+
+	   @include breakpoint($large) {
+           @include background-image(url('../images/icons/UM.png'));
+           background-size: 250px;
+           background-position: 98% center;
+           background-repeat: no-repeat;
+           padding-right: 300px;
+	   } //breakpoint
+
+	   @include breakpoint(max-width 480px) {
+	      #hide {
+	         display: none;
+	      } //hide
+	   } // breakpoint
+
+	   border: 1px solid $light;
+	   padding: 20px;
+	   @include border-radius(20px);
+	} // ranking
 } // umich
