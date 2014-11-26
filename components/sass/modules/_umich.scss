@@ -1,0 +1,58 @@
+#umich {
+	@include background-image(linear-gradient(top, $blue, $lightblue));
+	color: $light;
+
+	#{headings()} {
+	   color: lighten($maize, 15);
+	} // headings
+
+	.heading {
+	   @include container(64em);
+	   img {
+	      max-width: 300px;
+          max-height: 300px;
+	   } // img
+	} // heading
+
+	#usefulinfo {
+	   @include container(64em);
+
+	   #historyinfo {
+	      @include span(4);
+	   } // historyinfo
+
+	   .galleryinfo {
+	      @include span(8);
+	      margin-left: 0;
+
+	      .slides {
+	         img {
+	            padding: 5px;
+	            width: 100%;
+	         } // img 
+	      } // slides
+	   } // galleryinfo
+
+	    #slider {
+	         overflow: hidden;
+	         width: 650px;
+	         height: 435px;
+	         border: 1px solid lighten($maize, 15);
+
+	         .slides {
+	            display: block;
+	            width: 6000px;
+	            height: 435px;
+	            margin: 0;
+	            padding: 0;
+	         } // slides
+
+	         .slide {
+	           float: left;
+	           list-style: none;
+	           width: 650px;
+	           height: 435px;
+	         } // slide
+	    } // slider
+	} // usefulinfo
+} // umich
