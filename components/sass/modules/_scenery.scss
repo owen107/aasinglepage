@@ -1,0 +1,40 @@
+#scenery {
+	@include clearfix;
+	@include container(100%);
+	padding: 0;
+	@include backImage('../images/skyline/HuronRiver.jpg');
+
+	@include display-flex();
+	@include align-items(center);
+	@include justify-content(center);
+
+	article {
+	  @include container(80%);
+	  @include breakpoint($medium) {
+	     @include container(50%);
+	  } // breakpoint
+
+	  padding: 20px;
+	  margin-top: 200px;
+	  margin-bottom: 200px;
+	  background: rgba($light, 0.8);
+	  @include border-radius(10px);
+
+	  p {
+	    font-weight: 500;
+	    font-size: 0.8em;
+	  } // p
+
+	  @include breakpoint(max-width 610px) {
+         h1 {
+            font-size: 0.9em;
+         } // h1
+
+         p {
+            margin-top: 10px;
+            font-size: 0.72em;
+            line-height: 1.5em;
+         } // p
+      } // breakpoint
+	} // article
+} // scenery

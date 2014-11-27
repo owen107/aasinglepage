@@ -1,19 +1,20 @@
 #dining {
 	h1, h2 {
-	   color: $maize;
 	   padding: 10px 0;
 	} // headings
+
+	h1 {
+	  color: $lightblue;
+	} // h1
+
+	h2 {
+	  color: $maize;
+	} // h2
 
 	img {
 	  width: 100%;
 	  @include border-radius(10px);
 	} // img
-
-	@include breakpoint(max-width 480px) {
-       #restaurantweek h1{
-          font-size: 0.9em;
-       } // h1
-    } // breakpoint
 
 	@include breakpoint($small) {
 	    #aadining {
@@ -38,6 +39,10 @@
 	         font-size: 1.2em;
 	         line-height: 120%;
 	         color: $yellow;
+
+	         @include breakpoint(max-width 800px) {
+                   font-size: 1em;
+	         } // breakpoint
 	       } // h2
 
 	       p {
@@ -58,12 +63,20 @@
 	   border-bottom: 1px solid $maize;
 
 	   h1 {
+	     @include breakpoint(max-width $iPhone) {
+	         font-size: 0.9em;
+	         color: $maize;
+	     } // breakpoint
 	     font-size: 1.3em;
 	   } // h1
 
 	   p {
+         @include breakpoint(max-width $iPhone) {
+              font-size: 0.8em;
+	     } // breakpoint
+
 	     font-weight: 500;
-	     font-size: 0.9em;
+	     font-size: 0.85em;
 	   } // p
 	} // restaurantweek
 } // dining

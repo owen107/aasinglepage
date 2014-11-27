@@ -144,7 +144,9 @@ body {
 
 /* line 2, ../../../components/sass/modules/_intro.scss */
 header .fullheight {
-  background: url("../images/skyline/aaskyline.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/skyline/aaskyline.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -208,12 +210,12 @@ header #nav {
   background-image: linear-gradient(to bottom, #407fbf, #336699);
   width: 100%;
 }
-/* line 12, ../../../components/sass/_mixins.scss */
+/* line 24, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
   content: "";
   display: table;
 }
-/* line 17, ../../../components/sass/_mixins.scss */
+/* line 29, ../../../components/sass/_mixins.scss */
 header #nav:after {
   clear: both;
 }
@@ -359,12 +361,12 @@ header #nav .navbar ul li a i {
 #welcome p {
   font-weight: 500;
 }
-/* line 12, ../../../components/sass/_mixins.scss */
+/* line 24, ../../../components/sass/_mixins.scss */
 #welcome .gallery:before, #welcome .gallery:after {
   content: "";
   display: table;
 }
-/* line 17, ../../../components/sass/_mixins.scss */
+/* line 29, ../../../components/sass/_mixins.scss */
 #welcome .gallery:after {
   clear: both;
 }
@@ -797,7 +799,9 @@ header #nav .navbar ul li a i {
 }
 /* line 41, ../../../components/sass/modules/_attractions.scss */
 #attractions #downtown {
-  background: url("../images/attractions/Downtown.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/Downtown.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -805,7 +809,9 @@ header #nav .navbar ul li a i {
 }
 /* line 42, ../../../components/sass/modules/_attractions.scss */
 #attractions #michigantheater {
-  background: url("../images/attractions/michiganTheater.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/michiganTheater.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -813,7 +819,9 @@ header #nav .navbar ul li a i {
 }
 /* line 43, ../../../components/sass/modules/_attractions.scss */
 #attractions #michiganstadium {
-  background: url("../images/attractions/michiganStadium.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/michiganStadium.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -821,7 +829,9 @@ header #nav .navbar ul li a i {
 }
 /* line 44, ../../../components/sass/modules/_attractions.scss */
 #attractions #briarwood {
-  background: url("../images/attractions/Briarwood.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/Briarwood.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -829,7 +839,9 @@ header #nav .navbar ul li a i {
 }
 /* line 45, ../../../components/sass/modules/_attractions.scss */
 #attractions #hillauditorium {
-  background: url("../images/attractions/Hill.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/Hill.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -837,7 +849,9 @@ header #nav .navbar ul li a i {
 }
 /* line 46, ../../../components/sass/modules/_attractions.scss */
 #attractions #nicholsarboretum {
-  background: url("../images/attractions/nicholsArboretum.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/nicholsArboretum.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -845,7 +859,9 @@ header #nav .navbar ul li a i {
 }
 /* line 47, ../../../components/sass/modules/_attractions.scss */
 #attractions #umlawschool {
-  background: url("../images/attractions/LawSchool.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/LawSchool.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -853,7 +869,9 @@ header #nav .navbar ul li a i {
 }
 /* line 48, ../../../components/sass/modules/_attractions.scss */
 #attractions #ummichiganofart {
-  background: url("../images/attractions/umma.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/attractions/umma.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -862,39 +880,40 @@ header #nav .navbar ul li a i {
 
 /* line 2, ../../../components/sass/modules/_dining.scss */
 #dining h1, #dining h2 {
-  color: #E89D00;
   padding: 10px 0;
 }
-/* line 7, ../../../components/sass/modules/_dining.scss */
+/* line 6, ../../../components/sass/modules/_dining.scss */
+#dining h1 {
+  color: #33A3DC;
+}
+/* line 10, ../../../components/sass/modules/_dining.scss */
+#dining h2 {
+  color: #E89D00;
+}
+/* line 14, ../../../components/sass/modules/_dining.scss */
 #dining img {
   width: 100%;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-@media (max-width: 480px) {
-  /* line 13, ../../../components/sass/modules/_dining.scss */
-  #dining #restaurantweek h1 {
-    font-size: 0.9em;
-  }
-}
 @media (min-width: 650px) {
-  /* line 19, ../../../components/sass/modules/_dining.scss */
+  /* line 20, ../../../components/sass/modules/_dining.scss */
   #dining #aadining {
     margin-bottom: 20px;
   }
-  /* line 22, ../../../components/sass/modules/_dining.scss */
+  /* line 23, ../../../components/sass/modules/_dining.scss */
   #dining #aadining h1 {
     font-weight: 300;
     font-size: 2.5em;
     color: #33A3DC;
   }
-  /* line 28, ../../../components/sass/modules/_dining.scss */
+  /* line 29, ../../../components/sass/modules/_dining.scss */
   #dining #aadining p {
     font-size: 1.5em;
     line-height: 140%;
   }
-  /* line 34, ../../../components/sass/modules/_dining.scss */
+  /* line 35, ../../../components/sass/modules/_dining.scss */
   #dining section {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -904,13 +923,21 @@ header #nav .navbar ul li a i {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  /* line 37, ../../../components/sass/modules/_dining.scss */
+  /* line 38, ../../../components/sass/modules/_dining.scss */
   #dining section h2 {
     font-size: 1.2em;
     line-height: 120%;
     color: #FFBC2E;
   }
-  /* line 43, ../../../components/sass/modules/_dining.scss */
+}
+@media (min-width: 650px) and (max-width: 800px) {
+  /* line 38, ../../../components/sass/modules/_dining.scss */
+  #dining section h2 {
+    font-size: 1em;
+  }
+}
+@media (min-width: 650px) {
+  /* line 48, ../../../components/sass/modules/_dining.scss */
   #dining section p {
     padding-top: 10px;
     font-size: 0.9em;
@@ -918,7 +945,7 @@ header #nav .navbar ul li a i {
     line-height: 130%;
   }
 }
-/* line 52, ../../../components/sass/modules/_dining.scss */
+/* line 57, ../../../components/sass/modules/_dining.scss */
 #dining #restaurantweek {
   margin-top: 20px;
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZjJmYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -933,14 +960,189 @@ header #nav .navbar ul li a i {
   border-top: 1px solid #E89D00;
   border-bottom: 1px solid #E89D00;
 }
-/* line 60, ../../../components/sass/modules/_dining.scss */
+/* line 65, ../../../components/sass/modules/_dining.scss */
 #dining #restaurantweek h1 {
   font-size: 1.3em;
 }
-/* line 64, ../../../components/sass/modules/_dining.scss */
+@media (max-width: 480px) {
+  /* line 65, ../../../components/sass/modules/_dining.scss */
+  #dining #restaurantweek h1 {
+    font-size: 0.9em;
+    color: #E89D00;
+  }
+}
+/* line 73, ../../../components/sass/modules/_dining.scss */
 #dining #restaurantweek p {
   font-weight: 500;
+  font-size: 0.85em;
+}
+@media (max-width: 480px) {
+  /* line 73, ../../../components/sass/modules/_dining.scss */
+  #dining #restaurantweek p {
+    font-size: 0.8em;
+  }
+}
+
+/* line 1, ../../../components/sass/modules/_events.scss */
+#events {
+  padding: 0;
+}
+/* line 24, ../../../components/sass/_mixins.scss */
+#events:before, #events:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../../../components/sass/_mixins.scss */
+#events:after {
+  clear: both;
+}
+/* line 5, ../../../components/sass/modules/_events.scss */
+#events .event {
+  position: relative;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#events .event:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 650px) {
+  /* line 5, ../../../components/sass/modules/_events.scss */
+  #events .event {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+  }
+}
+/* line 12, ../../../components/sass/modules/_events.scss */
+#events .event .content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  color: #FFFFFF;
+  font-weight: 200;
+  line-height: 130%;
+}
+/* line 21, ../../../components/sass/modules/_events.scss */
+#events .event .content h2 {
+  line-height: 1em;
+}
+/* line 25, ../../../components/sass/modules/_events.scss */
+#events .event .content p {
+  padding: 5px 0;
   font-size: 0.9em;
+}
+/* line 31, ../../../components/sass/modules/_events.scss */
+#events #artfair {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/events/ArtFair.jpg");
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 35, ../../../components/sass/modules/_events.scss */
+#events #summerfestival {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/events/summerfest.jpg");
+  background-repeat: no-repeat;
+  background-position: 63% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 1, ../../../components/sass/modules/_scenery.scss */
+#scenery {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/skyline/HuronRiver.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 24, ../../../components/sass/_mixins.scss */
+#scenery:before, #scenery:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../../../components/sass/_mixins.scss */
+#scenery:after {
+  clear: both;
+}
+/* line 12, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#scenery:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 11, ../../../components/sass/modules/_scenery.scss */
+#scenery article {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background: rgba(255, 255, 255, 0.8);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 12, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#scenery article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 11, ../../../components/sass/modules/_scenery.scss */
+  #scenery article {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../.rbenv/versions/2.0.0-p353/lib/ruby/gems/2.0.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  #scenery article:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 23, ../../../components/sass/modules/_scenery.scss */
+#scenery article p {
+  font-weight: 500;
+  font-size: 0.8em;
+}
+@media (max-width: 610px) {
+  /* line 29, ../../../components/sass/modules/_scenery.scss */
+  #scenery article h1 {
+    font-size: 0.9em;
+  }
+  /* line 33, ../../../components/sass/modules/_scenery.scss */
+  #scenery article p {
+    margin-top: 10px;
+    font-size: 0.72em;
+    line-height: 1.5em;
+  }
 }
 
 /* line 1, ../../../components/sass/modules/_footer.scss */
