@@ -43,4 +43,12 @@ $(document).ready(function(){
 
     $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     startSlider();
+
+    var wheight = $(window).height(); // get the height of the window
+    $('.fullheight').css('height', wheight);
+
+    $(window).resize(function() {
+        var wheight = $(window).height(); // get the height of the window
+        $('.fullheight').css('height', wheight);
+    });
 });

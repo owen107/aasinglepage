@@ -1,0 +1,50 @@
+#attractions {
+	header {
+	   margin-bottom: 20px;
+	   @include container(90%);
+	   @include breakpoint($medium) {
+	      @include container;
+	      @include pad(1,1);
+	   } // breakpoint
+	} // header
+
+	.attraction {
+	   @include container(100%);
+	   @include pad(1,1);
+
+	   @include display-flex();
+	   @include align-items(center);
+	   @include justify-content(center);
+
+	   padding: 200px 0;
+
+	   @include breakpoint($small) {
+	      @include pad(7,1);
+	   } // breakpoint
+
+	   .content {
+	      @include border-radius(10px);
+	      background: rgba($light, 0.8);
+	      padding: 20px;
+
+	      h1 {
+	        color: darken($lightblue, 15);
+	      } // h1
+
+	      p {
+	        font-weight: 500;
+	        font-size: 0.85em;
+	      } // p
+	   } // content
+	} // attraction
+
+	#downtown { @include backImage('../images/attractions/Downtown.jpg'); } //
+	#michigantheater { @include backImage('../images/attractions/michiganTheater.jpg'); } //
+	#michiganstadium { @include backImage('../images/attractions/michiganStadium.jpg'); } //
+	#briarwood { @include backImage('../images/attractions/Briarwood.jpg'); } //
+	#hillauditorium { @include backImage('../images/attractions/Hill.jpg'); } //
+	#nicholsarboretum { @include backImage('../images/attractions/nicholsArboretum.jpg'); } //
+	#umlawschool { @include backImage('../images/attractions/LawSchool.jpg'); } //
+	#ummichiganofart { @include backImage('../images/attractions/umma.jpg'); } //
+
+} // attractions

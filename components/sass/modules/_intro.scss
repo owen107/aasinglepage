@@ -1,6 +1,9 @@
 header {
 	.fullheight {
 	   @include backImage('../images/skyline/aaskyline.jpg');
+	   @include display-flex();
+	   @include align-items(center);
+	   @include justify-content(center);
 
 	   .hgroup {
 	      padding: 120px 0;

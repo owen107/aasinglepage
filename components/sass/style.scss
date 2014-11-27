@@ -22,12 +22,13 @@
 @import "layout";
 
 // Import Modules
-@import "modules/welcome";
+
 @import "modules/intro";
+@import "modules/nav";
+@import "modules/welcome";
 @import "modules/umich";
-@import "modules/landmark";
+@import "modules/attractions";
 @import "modules/dining";
 @import "modules/events";
 @import "modules/scenery";
-@import "modules/nav";
 @import "modules/footer";
