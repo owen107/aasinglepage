@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-    var isTouch = 'ontouchstart' in document.documentElement;
 	
     // set up the image hover effect in welcome section
 	$('#welcome').find('.gallery img').hover(hoverImageEnter, hoverImageLeave);
@@ -33,6 +31,21 @@ $(document).ready(function(){
         $(this).attr('id', 'summerfestival_hover');
     }, function() {
         $(this).attr('id','summerfestival');
+    });
+
+    // set up the slidetoggle effect in dining section
+    $("#restaurant").on("mouseenter", "div.toggle", function() {
+        $(this).find("span").slideToggle(500);
+    }).on("mouseleave", "div.toggle", function() {
+        $(this).find("span").slideToggle(500);
+    });
+
+     // set up the slidetoggle effect for the image slider in umich section
+    $(".slides").on("mouseenter", "li", function() {
+        var title = $(this).find('img').attr('title');
+        $(this).find("span").text(title).slideToggle(500);
+    }).on("mouseleave", "li", function() {
+        $(this).find("span").slideToggle(500);
     });
     
     // set up the image slider in umich section
@@ -139,6 +152,9 @@ $(document).ready(function(){
     }).setPin('#nav').addTo(controller);
 
 
+    // check if the platform is mobile device
+    var isTouch = 'ontouchstart' in document.documentElement;
+
     if (!isTouch) {
         // attractions animation
         var attractionOrigin = {
@@ -236,8 +252,6 @@ $(document).ready(function(){
             duration: 500
         }).setPin('#ummichiganofart').setTween(attractionTween).addTo(controller);
     }
-    
-
 
     // scenery animation
     var scenerytween = TweenMax.

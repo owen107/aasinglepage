@@ -102,9 +102,24 @@
 
 	         .slide {
 	           float: left;
+	           position: relative;
 	           list-style: none;
 	           max-width: 650px;
 	           max-height: 435px;
+
+	           span {
+	              display: none;
+	              background: rgba($dark, 0.7);
+	              position: absolute;
+				  bottom: 5px;
+				  left: 0;
+				  right: 0;
+				  top: auto;
+				  padding: 15px 20px;
+				  color: $yellow;
+				  font-weight: 500;
+				  font-size: 1.1em;
+	           } // span
 	         } // slide
 	    } // slider
 

@@ -14,7 +14,38 @@
 	img {
 	  width: 100%;
 	  @include border-radius(10px);
+	  
 	} // img
+
+	.toggle {
+	    position: relative;
+
+	    span {
+	       display: none;
+		   position: absolute;
+		   background: rgba($dark, 0.5);
+		   bottom: 5px;
+		   left: 0;
+		   right: 0;
+		   top: auto;
+		   padding: 10px 5px;
+		   @include border-bottom-radius(10px);
+		   color: $light;
+		   font-weight: 500;
+		   font-size: 0.9em;
+		   text-align: center;
+		   line-height: 1.1em;
+
+		   strong {
+		     color: $lightblue;
+		     opacity: 0.9;
+		   } // strong
+
+		   i {
+		     color: $maize;
+		   } //i
+		} // span
+	} // toggle
 
 	@include breakpoint($small) {
 	    #aadining {
