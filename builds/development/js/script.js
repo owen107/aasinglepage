@@ -67,6 +67,7 @@ $(document).ready(function(){
     $slider.on('mouseenter', stopSlider).on('mouseleave', startSlider);
     startSlider();
 
+    // set up the full height for the image
     var wheight = $(window).height(); // get the height of the window
     $('.fullheight').css('height', wheight);
 

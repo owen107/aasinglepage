@@ -1,0 +1,69 @@
+#dining {
+	h1, h2 {
+	   color: $maize;
+	   padding: 10px 0;
+	} // headings
+
+	img {
+	  width: 100%;
+	  @include border-radius(10px);
+	} // img
+
+	@include breakpoint(max-width 480px) {
+       #restaurantweek h1{
+          font-size: 0.9em;
+       } // h1
+    } // breakpoint
+
+	@include breakpoint($small) {
+	    #aadining {
+	       margin-bottom: 20px;
+
+	       h1 {
+	         font-weight: 300;
+	         font-size: 2.5em;
+	         color: $lightblue;
+	       } // h1
+
+	       p {
+	         font-size: 1.5em;
+	         line-height: 140%;
+	       } // p
+	    } // aadining
+
+	    section {
+	       @include span(4 of 12);
+
+	       h2 {
+	         font-size: 1.2em;
+	         line-height: 120%;
+	         color: $yellow;
+	       } // h2
+
+	       p {
+	         padding-top: 10px;
+	         font-size: 0.9em;
+	         font-weight: 500;
+	         line-height: 130%;
+	       } // p
+	    } // section
+	} // breakpoint
+
+	#restaurantweek {
+	   margin-top: 20px;
+	   @include background-image(linear-gradient(top, $light, lighten($lightblue, 40)));
+	   @include pad(1,1);
+	   text-align: center;
+	   border-top: 1px solid $maize;
+	   border-bottom: 1px solid $maize;
+
+	   h1 {
+	     font-size: 1.3em;
+	   } // h1
+
+	   p {
+	     font-weight: 500;
+	     font-size: 0.9em;
+	   } // p
+	} // restaurantweek
+} // dining
