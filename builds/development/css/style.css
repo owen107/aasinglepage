@@ -209,6 +209,7 @@ header #nav {
   background-image: -webkit-linear-gradient(top, #407fbf, #336699);
   background-image: linear-gradient(to bottom, #407fbf, #336699);
   width: 100%;
+  z-index: 100;
 }
 /* line 24, ../../../components/sass/_mixins.scss */
 header #nav:before, header #nav:after {
@@ -219,7 +220,7 @@ header #nav:before, header #nav:after {
 header #nav:after {
   clear: both;
 }
-/* line 6, ../../../components/sass/modules/_nav.scss */
+/* line 7, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar {
   max-width: 60em;
   margin-left: auto;
@@ -231,7 +232,7 @@ header #nav .navbar:after {
   display: block;
   clear: both;
 }
-/* line 8, ../../../components/sass/modules/_nav.scss */
+/* line 9, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -247,7 +248,7 @@ header #nav .navbar .brand {
   text-transform: uppercase;
   background: #FFFFFF;
 }
-/* line 17, ../../../components/sass/modules/_nav.scss */
+/* line 18, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar .brand a {
   color: #DC4332;
   text-decoration: none;
@@ -257,12 +258,12 @@ header #nav .navbar .brand a {
   font-size: 1.5em;
 }
 @media (max-width: 650px) {
-  /* line 17, ../../../components/sass/modules/_nav.scss */
+  /* line 18, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar .brand a {
     font-size: 0.83em;
   }
 }
-/* line 31, ../../../components/sass/modules/_nav.scss */
+/* line 32, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -272,11 +273,11 @@ header #nav .navbar ul {
   padding-left: 0.83333%;
   padding-right: 0.83333%;
 }
-/* line 33, ../../../components/sass/modules/_nav.scss */
+/* line 34, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li {
   float: left;
 }
-/* line 36, ../../../components/sass/modules/_nav.scss */
+/* line 37, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a {
   display: inline-block;
   color: #FFFFFF;
@@ -286,28 +287,33 @@ header #nav .navbar ul li a {
   padding: 10px 15px;
   text-decoration: none;
 }
-/* line 45, ../../../components/sass/modules/_nav.scss */
+/* line 46, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a:hover {
   background: #FFBC2E;
   color: #DC4332;
 }
-/* line 50, ../../../components/sass/modules/_nav.scss */
+/* line 51, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active {
+  background: #f2f2f2;
+  color: #DC4332;
+}
+/* line 56, ../../../components/sass/modules/_nav.scss */
 header #nav .navbar ul li a i {
   padding-right: 10px;
 }
 @media (min-width: 0) and (max-width: 650px) {
-  /* line 36, ../../../components/sass/modules/_nav.scss */
+  /* line 37, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a {
     padding-left: 10px;
     padding-right: 0;
   }
-  /* line 58, ../../../components/sass/modules/_nav.scss */
+  /* line 64, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a span {
     display: none;
   }
 }
 @media (min-width: 650px) and (max-width: 960px) {
-  /* line 64, ../../../components/sass/modules/_nav.scss */
+  /* line 70, ../../../components/sass/modules/_nav.scss */
   header #nav .navbar ul li a i {
     display: none;
   }
@@ -963,12 +969,12 @@ header #nav .navbar ul li a i {
 /* line 65, ../../../components/sass/modules/_dining.scss */
 #dining #restaurantweek h1 {
   font-size: 1.3em;
+  color: #E89D00;
 }
 @media (max-width: 480px) {
   /* line 65, ../../../components/sass/modules/_dining.scss */
   #dining #restaurantweek h1 {
     font-size: 0.9em;
-    color: #E89D00;
   }
 }
 /* line 73, ../../../components/sass/modules/_dining.scss */
@@ -1019,7 +1025,7 @@ header #nav .navbar ul li a i {
     float: left;
   }
 }
-/* line 12, ../../../components/sass/modules/_events.scss */
+/* line 13, ../../../components/sass/modules/_events.scss */
 #events .event .content {
   position: absolute;
   bottom: 0;
@@ -1029,16 +1035,16 @@ header #nav .navbar ul li a i {
   font-weight: 200;
   line-height: 130%;
 }
-/* line 21, ../../../components/sass/modules/_events.scss */
+/* line 22, ../../../components/sass/modules/_events.scss */
 #events .event .content h2 {
   line-height: 1em;
 }
-/* line 25, ../../../components/sass/modules/_events.scss */
+/* line 26, ../../../components/sass/modules/_events.scss */
 #events .event .content p {
   padding: 5px 0;
   font-size: 0.9em;
 }
-/* line 31, ../../../components/sass/modules/_events.scss */
+/* line 33, ../../../components/sass/modules/_events.scss */
 #events #artfair {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/events/ArtFair.jpg");
   background-repeat: no-repeat;
@@ -1048,9 +1054,29 @@ header #nav .navbar ul li a i {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 35, ../../../components/sass/modules/_events.scss */
+/* line 37, ../../../components/sass/modules/_events.scss */
+#events #artfair_hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/events/ArtFair_h.jpg");
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 41, ../../../components/sass/modules/_events.scss */
 #events #summerfestival {
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/events/summerfest.jpg");
+  background-repeat: no-repeat;
+  background-position: 63% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 45, ../../../components/sass/modules/_events.scss */
+#events #summerfestival_hover {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/events/summerfes.jpg");
   background-repeat: no-repeat;
   background-position: 63% top;
   -webkit-background-size: cover;

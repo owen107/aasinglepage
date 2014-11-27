@@ -65,9 +65,9 @@
 	   h1 {
 	     @include breakpoint(max-width $iPhone) {
 	         font-size: 0.9em;
-	         color: $maize;
 	     } // breakpoint
 	     font-size: 1.3em;
+	     color: $maize;
 	   } // h1
 
 	   p {

@@ -2,6 +2,7 @@ header #nav{
 	@include clearfix;
 	@include background-image(linear-gradient(top, lighten($navBackground, 10), $navBackground));
 	width: 100%;
+  z-index: 100;
     
     .navbar {
        @include container;
@@ -46,6 +47,11 @@ header #nav{
                background: $navHover;
                color: $red;
              } // hover
+
+             &.active {
+                background: darken($light, 5);
+                color: $red;
+             } // active
              
              i {
                 padding-right: 10px;
